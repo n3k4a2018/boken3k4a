@@ -37,6 +37,6 @@ const allowedUsers = config.allowedUsers;
 const roles = config.roleToDisco;
 
 client.on("ready", () => {
-    client.user.setPresence({ game: { name: `Disco Roles! Created by i am @💔🎧⦕n⦖⦕3⦖⦕k⦖⦕4⦖🎧💔#2050 ` }, type: 0 });
+    client.user.setPresence({ game: { name: `Disco Roles! Created by i am @ᵀᴳ n3k4a#0533  ` }, type: 0 });
     console.log("Disco role bot online! Created by n3k4a.");
 });
