@@ -1,8 +1,7 @@
 {
-  "token" : "",     
+  "token" : "NDg2MTIzNTA5MTYxMDAwOTYw.DvGNOA.3tJ-kPW87Jwuz5U5mORQcQCgTDs",
   "ms" : 1500,
-  "roleToDisco" : ["Rainbow1"],     
-  "prefix" : "-",
-  "allowedUsers" : ["462006869834203159", "337182285822558209"]  
+  "roleToDisco" : ["Disco", "Rainbow"],
+  "prefix" : "d!",
+  "allowedUsers" : ["462006869834203159", "337182285822558209"]
 }
-client.login(process.env.BOT_TOKEN);
