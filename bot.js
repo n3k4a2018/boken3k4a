@@ -1,3 +1,16 @@
+const Discord = require('discord.js');
+const config = require('./config.json');
+const disco = new Discord.Client();
+const prefix = config.prefix;
+const allowedUsers = config.allowedUsers;
+const roles = config.roleToDisco;
+
+disco.on("ready", () => {
+    disco.user.setPresence({ game: { name: `Disco Roles! Created by i am n3k4a` }, type: 0 });
+    console.log("Disco role bot online! Created by i am toast.");
+});
+
+disco.on("message", message => {
 
   function discoRole() {
     let random = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
@@ -29,13 +42,5 @@ if(message.content.startsWith(prefix + "stopdisco")) {
 }
 
 });
-const config = require('config.json');
-const prefix = config.prefix;
 
-const allowedUsers = config.allowedUsers;
-const roles = config.roleToDisco;
-
-client.on("ready", () => {
-    client.user.setPresence({ game: { name: `Disco Roles! Created by i am @ᵀᴳ n3k4a#0533 ` }, type: 0 });
-    console.log("Disco role bot online! Created by n3k4a.");
-});
+disco.login(config.token);
